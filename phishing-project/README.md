@@ -56,3 +56,10 @@ This type of phishing attack can lead to unauthorized account access, financial 
 
 ### 🌐 Nmap Scan
 ![Nmap](Nmap.png)
+
+## ▶️ How to Run the Project
+
+1. Clone the repository:
+```bash
+git clone https://github.com/amashicyber-a/cyber-security-portfolio.git
+cd cyber-security-portfolio/phishing-project
