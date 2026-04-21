@@ -39,17 +39,20 @@ This type of phishing attack can lead to unauthorized account access, financial 
 
 ## 📸 Project Screenshots
 
-### 🔐 Firewall Block
-![Firewall](firewall block.png)
+### 🚫 Port Block (iptables)
+![Port Block](block%20port%208080.png)
 
-### 🖥️ Flask Credential Capture
-![Flask](flask terminal log.png)
+### 🔐 Firewall Block
+![Firewall](firewall%20block.png)
+
+### 💻 Flask Credential Capture
+![Flask](flask%20terminal%20log.png)
 
 ### 🔒 HTTPS Secure Page
 ![HTTPS](https.png)
 
 ### 📄 Login Result Page
-![Login](login result page.png)
+![Login](login%20result%20page.png)
 
 ### 🌐 Nmap Scan
 ![Nmap](Nmap.png)
