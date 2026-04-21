@@ -36,3 +36,20 @@ Multi-Factor Authentication (MFA) is recommended.
 
 ## Real-World Banking Impact
 This type of phishing attack can lead to unauthorized account access, financial fraud, and reputational damage.
+
+## 📸 Project Screenshots
+
+### 🔐 Firewall Block
+![Firewall](firewall block.png)
+
+### 🖥️ Flask Credential Capture
+![Flask](flask terminal log.png)
+
+### 🔒 HTTPS Secure Page
+![HTTPS](https.png)
+
+### 📄 Login Result Page
+![Login](login result page.png)
+
+### 🌐 Nmap Scan
+![Nmap](Nmap.png)
