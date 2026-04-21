@@ -113,7 +113,7 @@ if __name__ == '__main__':
 
 ---
 
-## 📚 What I Learned
+## What I Learned
 
 - How phishing attacks capture user credentials
 - Building a web application using Flask
@@ -124,7 +124,7 @@ if __name__ == '__main__':
 
 ---
 
-## 🔐 Security Improvements
+## Security Improvements
 
 - Enforced HTTPS using SSL certificates
 - Blocked malicious traffic using iptables firewall rules
