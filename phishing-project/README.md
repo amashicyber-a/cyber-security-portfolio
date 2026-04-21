@@ -134,7 +134,7 @@ if __name__ == '__main__':
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is created for educational purposes only. It demonstrates how phishing attacks work in a controlled environment to improve cybersecurity awareness and defense strategies.
 
